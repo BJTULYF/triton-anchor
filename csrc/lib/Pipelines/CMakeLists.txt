@@ -7,5 +7,4 @@ add_triton_library(TritonLinalgPipelines
   MLIRIR
   TritonToLinalg
   TritonTransformsExtend
-  TritonToPPL
 )
