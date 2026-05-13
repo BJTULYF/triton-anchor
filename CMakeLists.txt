@@ -28,8 +28,9 @@ include(TableGen)
 include(AddLLVM)
 include(AddMLIR)
 
-# Pybind11
-find_package(pybind11 REQUIRED)
+# Pybind11: 通过 Python3 的 site-packages 路径自动发现 pip 安装的 pybind11
+find_package(Python3 REQUIRED COMPONENTS Development Interpreter)
+find_package(pybind11 CONFIG REQUIRED HINTS "${Python3_SITELIB}")
 
 # ═══════════════════════════════════════════════════════════════════════
 # 编译器标志（与上游 Triton 保持一致）
