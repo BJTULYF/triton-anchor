@@ -1,17 +1,23 @@
-# triton-anchor
+<p align="center">
+  <img src="assets/logo.png" alt="triton-anchor logo" width="420">
+</p>
+
+<h1 align="center">triton-anchor</h1>
 
 <!-- badges -->
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?logo=githubactions&logoColor=white)](../../actions/workflows/ci.yml)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776ab.svg)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/Status-v0.1-orange.svg)](ROADMAP.md)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License"></a>
+  <a href="../../actions/workflows/ci.yml"><img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?logo=githubactions&logoColor=white" alt="CI"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.9%2B-3776ab.svg" alt="Python 3.9+"></a>
+  <a href="ROADMAP.md"><img src="https://img.shields.io/badge/Status-v0.1-orange.svg" alt="Status"></a>
+</p>
 
 > **项目定位**：面向多款芯片的共性编译前端，在统一的 Triton 编译前端中同时支持 **RISC-V Matrix 扩展指令集**（**AME）**、**RISC-V Tensor 扩展指令集**和 **SIMT 扩展指令集（GPGPU）** 的插件化架构。
 
 > [!IMPORTANT]
 > **AnchorIR**（锚点中间表示）是 triton-anchor 定义的 **双轨统一输出契约**——所有 TTIR 到硬件感知 IR 的转换，无论走 Linalg 路径还是 TritonGPU 路径，其输出都被纳入 AnchorIR 契约管理。
 
-📋 **[路线图](ROADMAP.md)** · 📖 **[构建指南](docs/build.md)** · 🔌 **[后端接入指南](docs/custom_backend.md)** · 🔒 **[安全策略](SECURITY.md)** · 🐛 **[报告问题](../../issues/new/choose)**
+📋 **[路线图](ROADMAP.md)** · 📖 **[构建指南](docs/build.md)** · 🔌 **[后端接入指南](docs/custom_backend.md)** · 🔒 **[安全策略](SECURITY.md)** · 💬 **[报告问题](../../issues/new/choose)**
 
 ---
 
